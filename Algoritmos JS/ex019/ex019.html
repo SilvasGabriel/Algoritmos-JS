@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Jogo de Xadrez</title>
+</head>
+<body>
+    <script>
+        /*Ler a hora de início e a hora de fim de um jogo de Xadrez (considere apenas horas inteiras, sem os
+minutos) e calcule a duração do jogo em horas, sabendo-se que o tempo máximo de duração do jogo é
+de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.*/
+        var hora1 = Number.parseInt(window.prompt('Digite a hora de inicio do jogo de xadrez:'))
+        var hora2 = Number.parseInt(window.prompt('Digite a hora do fim do jogo de xadrez:'))
+        var duracao
+
+        if(hora1>24 && hora2>24){
+            window.alert('As horas passaram de 24 horas não possível calcular digite novamente as horas!')
+        }
+
+        if(hora1>=hora2){
+            duracao = (24-hora1) + hora2
+            window.alert(`A duração do jogo de xadrez foi de ${duracao} horas.`)
+        }else{
+            duracao = hora2-hora1
+            window.alert(`A duração do jogo de xadrez foi de ${duracao} horas.`)
+        }
+        
+
+    </script>
+</body>
+</html>

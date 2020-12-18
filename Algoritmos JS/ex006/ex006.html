@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+</head>
+<body>
+    <script>
+        /*Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos
+    brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total
+    de eleitores.*/
+
+        var municipio = window.prompt('Qual o nome do seu mucípio?')
+        var eleitores = Number.parseInt(window.prompt('Quantos eleitores tem em seu município?'))
+        var votosbrancos = Number.parseInt(window.prompt('Quantos votos brancos teve na eleição?'))
+        var votosnulos = Number.parseInt(window.prompt('Quantos votos nulos teve na eleição?'))
+        var votosvalidos =Number.parseInt(window.prompt('Quantos votos válidos teve na eleição?'))
+
+        var percentualbrancos = (votosbrancos*100)/eleitores
+        var percentualnulos = (votosnulos*100)/eleitores
+        var percentualvalidos = (votosvalidos*100)/eleitores
+
+        window.alert(`O município de ${municipio} tem ${eleitores} de eleitores.\n Os eleitores que votaram em branco possuem percentual de ${percentualbrancos}%\n Os eleitores que votaram em nulo possuem percentual de ${percentualnulos}%\n Os eleitores que tiveram os votos validos possuem percentual de ${percentualvalidos}% `)
+
+    </script>
+</body>
+</html>

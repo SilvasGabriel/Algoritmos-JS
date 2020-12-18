@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor crescente</title>
+</head>
+<body>
+    <script>
+        /*Ler dois valores (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.*/
+        var valor1 = Number.parseFloat(window.prompt('Digite um valor'))
+        var valor2 = Number.parseFloat(window.prompt('Digite outro valor'))
+
+        if(valor1===valor2){
+            window.alert(`Os valores são iguais por favor digite outros valores!`)
+        }else if(valor1>valor2){
+            window.alert(`Na ordem crescente ficaria assim ${valor2},${valor1},...`)
+        }else{
+            window.alert(`Na ordem crescente ficaria assim ${valor1},${valor2},...`)
+        }
+        
+    </script>
+</body>
+</html>

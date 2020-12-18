@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Negativos</title>
+</head>
+<body>
+    <script>
+        /*Ler 10 valores e escrever quantos desses valores lidos são NEGATIVOS.*/
+
+        var negativo = 0
+
+        for(var i=1;i<=10;i++){
+            var num = Number.parseFloat(window.prompt('Digite dez número:'))
+                if(num<0){
+                    negativo = negativo+1  //ou negativo++                  
+                }
+        }
+        
+        window.alert(`Foram digitados ${negativo} números negativos.`)
+
+    </script>
+</body>
+</html>

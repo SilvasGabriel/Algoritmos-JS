@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre e Fora 10 e 20</title>
+</head>
+<body>
+    <script>
+        /*Ler 10 valores e escrever quantos desses valores lidos estão no intervalo [10,20] (inlcuindo os
+valores 10 e 20 no intervalo) e quantos deles estão fora deste intervalo.*/
+        var entre = 0
+        var fora = 0
+
+        for(var i=1;i<=10;i++){
+            var valor = Number.parseInt(window.prompt('Digite dez valores:'))
+            if((valor>=10)&&(valor<=20)){
+                entre = entre + 1 // entre++
+            }else{
+                fora = fora + 1 // fora++
+            }
+        }
+
+        window.alert(`Tem ${entre} número(s) entre 10 e 20.\nTem ${fora} número(s) fora de 10 e 20.`)
+
+    </script>
+</body>
+</html>

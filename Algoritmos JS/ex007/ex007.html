@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sálario com reajuste</title>
+</head>
+<body>
+    <script>
+        /*Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste.
+Calcular e escrever o valor do novo salário.*/
+        var salario = Number.parseFloat(window.prompt('Informe o sálario atual do seu funcionário:'))
+        var taxareajuste = Number.parseInt(window.prompt('Informe a taxa de reajuste:')) 
+        var ajuste = (salario * taxareajuste)/100
+        var novosalario = salario + ajuste
+
+        window.alert(`O salário do seu funcionario é :$${salario},00. \n A taxa de reajuste tem ${taxareajuste}%. \n O novo sálario reajustado do seu funcionário é de :$${novosalario},00.`)
+
+    </script>
+</body>
+</html>

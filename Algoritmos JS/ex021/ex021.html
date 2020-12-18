@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário/Vendas</title>
+</head>
+<body>
+    <script>
+        /*Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que
+ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que
+ultrapassar este valor, calcular e escrever o seu salário total.*/
+        var salario_fixo = Number.parseFloat(window.prompt('Qual o salário fixo do funcionário?'))
+        var valor_de_vendas = Number.parseInt(window.prompt('Qual o valor das vendas efetuadas'))
+        var salário_total 
+        var comissão3
+        var comissão5
+        var salario_comissao3
+        var salario_comissao5
+
+        comissão5 = valor_de_vendas-1500
+
+        if(comissão5>0){
+            salario_comissao3 = 1500*0.03
+            salario_comissao5 = 1500*0.05
+        }
+        else{
+            if(valor_de_vendas>0){
+                salario_comissao3 = valor_de_vendas*0.03
+            }else{
+                salario_comissao3 = 0
+            }
+            salario_comissao5 = 0
+        }
+       
+        salário_total = salario_fixo + salario_comissao3 + salario_comissao5
+
+        window.alert(`O salário total do funcionário é de $${salário_total} reais.`)
+        
+
+    </script>
+</body>
+</html>

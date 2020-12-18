@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma entre dois valores </title>
+</head>
+<body>
+    <script>
+        /*Ler 2 valores, calcular e escrever a soma dos inteiros existentes entre os 2 valores lidos (incluindo
+os valores lidos na soma). Considere que o segundo valor lido será sempre maior que o primeiro valor
+lido.*/
+        var valor1 = Number.parseFloat(window.prompt('Digite o primeiro valor:'))
+        var valor2 = Number.parseFloat(window.prompt('Digite o segundo valor:'))
+        var soma = 0 
+
+        if(valor2>valor1){
+
+            for(i=valor1;i<=valor2;i++){ // Para saber os valores entre mostrar no for i = valor
+                soma = soma+i
+            }
+
+            window.alert(`A soma entre os valores é ${soma}.`)
+
+        }
+        
+
+    </script>
+</body>
+</html>

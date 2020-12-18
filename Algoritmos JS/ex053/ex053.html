@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos e Média da Sala</title>
+</head>
+<body>
+    <script>
+        /*Ler o número de alunos existentes em uma turma e, após isto, ler as notas destes alunos, calcular e
+escrever a média aritmética dessas notas lidas.*/
+        var alunos = Number.parseInt(window.prompt('Quantos alunos existentes nesta turma?'))
+        var total_notas = 0
+        var media
+
+        for(i=1;i<=alunos;i++){
+            var notas = Number.parseFloat(window.prompt('Digite as notas desses alunos:'))
+            total_notas = total_notas+notas
+        }
+
+        media = total_notas/alunos
+        window.alert(`Existem ${alunos} alunos na sala, e a média da sala é ${media}.`)
+
+    </script>
+</body>
+</html>

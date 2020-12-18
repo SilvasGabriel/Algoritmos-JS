@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analise de Nomes</title>
+</head>
+<body>
+    <script>
+        /* Escreva um algoritmo que permita a leitura dos nomes de 10 pessoas e armaze os nomes lidos em
+um vetor. Após isto, o algoritmo deve permitir a leitura de mais 1 nome qualquer de pessoa e depois
+escrever a mensagem ACHEI, se o nome estiver entre os 10 nomes lidos anteriormente (guardados no
+vetor), ou NÃO ACHEI caso contrário. */ 
+        
+        let vetor_nomes = []
+
+        for(let i=0;i<10;i++){
+            let nome = window.prompt('Cadastre 10 nomes:')
+            vetor_nomes.push(nome)
+        }
+
+        let nome = window.prompt('Adicione mais um nome:')
+        vetor_nomes.push(nome)
+
+        
+        if(vetor_nomes[0,1,2,3,4,5,6,7,8,9] === vetor_nomes[10]){
+                window.alert(`ACHOU!`)
+        }
+        if(vetor_nomes[0,1,2,3,4,5,6,7,8,9] !== vetor_nomes[10]){
+                window.alert(`NÃO ACHOU!`)
+        }
+
+    </script>
+</body>
+</html>

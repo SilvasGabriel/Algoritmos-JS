@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custo do Veiculo</title>
+</head>
+<body>
+    <script>
+        /*O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do
+distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor
+seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro,
+calcular e escrever o custo final ao consumidor.*/
+        
+        var custo_de_fabrica = Number.parseFloat(window.prompt(`Qual o valor do custo de fabrica do carro?`))
+        var custo_final_consumidor
+        var percentual_distribuidor
+        var percentual_imposto
+        
+        percentual_distribuidor = (custo_de_fabrica * 28)/100
+        percentual_imposto = (custo_de_fabrica * 45)/100
+
+        custo_final_consumidor =  percentual_imposto + percentual_distribuidor + custo_de_fabrica
+
+        window.alert(`O custo de fabrica de um carro é de $${custo_de_fabrica},00.\n O custo final do carro para o consumidor é de $${custo_final_consumidor},00.`)
+
+    </script>
+</body>
+</html>

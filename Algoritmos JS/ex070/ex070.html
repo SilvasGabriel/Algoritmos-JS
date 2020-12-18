@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O menor elemento do vetor e sua posição</title>
+</head>
+<body>
+    <script>
+        /*O mesmo exercício anterior, mas agora deve escrever o menor elemento do vetor e a respectiva
+posição dele nesse vetor.*/
+            let vetor = []
+            let menor = 0
+
+            for(let i=1;i<=20;i++){
+                let cadastro = Number.parseInt(window.prompt('Digite 20 números:'))
+                vetor.push(cadastro)
+
+                if(cadastro<0){
+                    window.alert(`DIGITE UM NÚMERO POSITIVO !`)
+                }
+                if(cadastro<menor){
+                    menor = cadastro
+                }
+            }
+            
+            window.alert(`O menor elemento do vetor é ${menor}.\nE está na posição ${vetor.indexOf(menor)}.`)
+    </script>
+</body>
+</html>

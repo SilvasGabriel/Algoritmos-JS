@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invertendo os valores do vetor</title>
+</head>
+<body>
+    <script>
+        /*Faça um algoritmo para ler 20 números e armazenar em um vetor. Após a leitura total dos 20
+números, o algoritmo deve escrever esses 20 números lidos na ordem inversa.*/
+        let vetor = []
+
+        for(let i=1;i<=20;i++){
+            let numero = Number.parseInt(window.prompt('Digite 20 números:'))
+            vetor.push(numero)
+        }
+
+            window.alert(`O vetor normal é = [${vetor}].\nO vetor invertido é = [${vetor.reverse()}]`)
+            
+
+    </script>
+</body>
+</html>

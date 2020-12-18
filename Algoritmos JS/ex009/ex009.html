@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Carros</title>
+</head>
+<body>
+    <script>
+        /*Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês,
+mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele
+efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas
+vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do
+vendedor.*/
+        
+        var numero_de_carros = Number.parseInt(window.prompt('Quantos carros o funcionário vendeu este mês?'))
+        var valor_de_vendas = Number.parseFloat(window.prompt('Qual o valor da venda de carros feita pelo seu fuincionário este mês?'))
+        var salário_fixo = Number.parseFloat(window.prompt('Qual o salário fixo do seu funcionário?'))
+        var valor_carros_vendidos = Number.parseFloat(window.prompt('Qual o valor recebido pelos carros vendidos?'))
+        var comissão1
+        var comissão2
+        var salário_final
+
+        comissão1 = numero_de_carros * valor_carros_vendidos
+        comissão2 = (valor_de_vendas*5)/100
+
+        salário_final = salário_fixo + comissão1 + comissão2
+
+        window.alert(`O salário final do vendedor é de $${salário_final},00.`)
+
+    </script>
+</body>
+</html>

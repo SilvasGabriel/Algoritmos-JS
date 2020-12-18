@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+</head>
+<body>
+    <script>
+        /*Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. Após, calcular e
+escrever o saldo atual (saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior
+ou igual a zero escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo'.*/
+        var numero_conta = Number.parseInt(window.prompt('Informe o número da sua conta querido(a) cliente:'))
+        var saldo = Number.parseFloat(window.prompt('Informe o saldo :'))
+        var debito = Number.parseFloat(window.prompt('Informe o debito:'))
+        var credito = Number.parseFloat(window.prompt('Informe o crédito :'))
+        var saldo_atual
+
+        saldo_atual = saldo - debito + credito
+
+        if(saldo_atual >= 0){
+            window.alert(`O número da sua conta é ${numero_conta}\n Você tem $${credito} de credito\n Você tem $${debito} de debito.\n O seu saldo é $${saldo_atual} e é um saldo POSITIVO.`)
+        }else{
+            window.alert(`O número da sua conta é ${numero_conta}\n Você tem $${credito} de credito\n Você tem $${debito} de debito.\n O seu saldo é $${saldo_atual} e é um saldo NEGATIVO.`)
+        }
+
+    </script>
+</body>
+</html>

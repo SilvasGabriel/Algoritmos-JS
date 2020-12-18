@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação</title>
+</head>
+<body>
+    <script>
+        /*Ler dois valores e imprimir uma das três mensagens a seguir:
+‘Números iguais’, caso os números sejam iguais
+‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
+‘Segundo maior’, caso o segundo seja maior que o primeiro.*/
+
+        var v1 = Number.parseInt(window.prompt('Digite o primeiro valor:'))
+        var v2 = Number.parseInt(window.prompt('Digite o segundo valor:'))
+
+        if(v1==v2){
+            window.alert(`Números Iguais!`)
+        }else if(v1>v2){
+            window.alert('Primeiro é Maior!')
+        }else{
+            window.alert(`Segundo é Maior!`)
+        }
+
+    </script>
+</body>
+</html>

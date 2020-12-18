@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão com DoWhile</title>
+</head>
+<body>
+    <script>
+        /*Escreva um algoritmo para ler 2 valores e se o segundo valor informado for ZERO, deve ser lido
+um novo valor, ou seja, para o segundo valor não pode ser aceito o valor zero e imprimir o resultado
+da divisão do primeiro valor lido pelo segundo valor lido. (utilizar a estrutura REPITA).*/
+        
+        
+        var valor1 = Number.parseInt(window.prompt('Digite um valor:'))  
+        var divisao
+
+        do{
+            var valor2 = Number.parseInt(window.prompt('Digite outro valor:'))
+        }
+        while (valor2==0)
+    
+        divisao = valor1/valor2
+
+        window.alert(`O resultado da divisão é ${divisao}.`)
+
+    </script>
+</body>
+</html>

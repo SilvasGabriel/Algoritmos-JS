@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivo/Negativo ou Zero</title>
+</head>
+<body>
+    <script>
+        /*Ler um valor e escrever se é positivo, negativo ou zero.*/
+        var valor = Number.parseFloat(window.prompt('Digite um número:'))
+
+        if(valor > 0){
+            window.alert(`O número digitado foi ${valor} é POSITIVO.`)
+        }else if(valor === 0){
+            window.alert(`O número digitado foi ${valor} é ZERO.`)
+        }else{
+            window.alert(`O número digitado foi ${valor} é NEGATIVO.`)
+        }
+
+    </script>
+</body>
+</html>

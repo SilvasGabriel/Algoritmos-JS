@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota do Aluno</title>
+</head>
+<body>
+    <script>
+        /*Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e escrever
+uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 6 o
+aluno é aprovado). Escrever também a média calculada.*/
+        
+        var nota1 = Number.parseFloat(window.prompt('Digite a primeira nota do aluno(a):'))
+        var nota2 = Number.parseFloat(window.prompt('Digite a segunda nota do aluno(a):'))
+        var media
+
+        media = (nota1+nota2)/2
+
+        if(nota1 >= 6 && nota2 >= 6){
+            window.alert(`O aluno(a) foi aprovado com a nota ${nota1}.\n O aluno(a) foi aprovado com a nota ${nota2}.\n A média do aluno(a) é ${media}.`)
+        }else{
+            window.alert(`O aluno(a) foi reprovado com a nota ${nota1}.\n O aluno(a) foi reprovado com a nota ${nota2}.\n A média do aluno(a) é ${media}.`)
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O maior elemento e sua posição</title>
+</head>
+<body>
+    <script>
+        /*Ler um vetor Q de 20 posições (aceitar somente números positivos). Escrever a seguir o valor do
+maior elemento de Q e a respectiva posição que ele ocupa no vetor.*/
+            let vetor = []
+            let maior = 0
+
+            for(let i=1;i<=20;i++){
+                let cadastro = Number.parseInt(window.prompt('Digite 20 números:'))
+                vetor.push(cadastro)
+
+                if(cadastro<0){
+                    window.alert(`DIGITE UM NÚMERO POSITIVO !`)
+                }
+                if(cadastro>maior){
+                    maior = cadastro
+                }
+            }
+            
+            window.alert(`O maior elemento do vetor é ${maior}.\nE está na posição ${vetor.indexOf(maior)}.`)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você vota?</title>
+</head>
+<body>
+    <script>
+        /*Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela
+poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu).*/
+        var ano_atual = Number.parseInt(window.prompt('Digite o ano atual:'))
+        var ano_nascimento = Number.parseInt(window.prompt('Digite seu ano de nascimento:'))
+
+        if(ano_atual-ano_nascimento >= 18){
+            window.alert(`Você é obrigado a votar!`)
+        }else if((ano_atual-ano_nascimento >=16) || (ano_atual-ano_nascimento >=65)){
+            window.alert(`Você não é obrigado a votar mas se quiser pode!`)
+        }else{
+            window.alert(`Você não pode votar!`)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontrar o maior e o menor entre 100 numeros digitados</title>
+</head>
+<body>
+    <script>
+        /*Faça um programa que leia 100 valores e no final, escreva o maior e o menor valor lido.*/ 
+        var maior = 0 
+        var menor = 0
+        var numero = Number.parseInt(window.prompt('Digite 100 números:'))
+        maior=numero
+        menor=numero
+
+        for(var i =0;i<=99;i++){
+            var numero = Number.parseInt(window.prompt('Digite 100 números:'))
+
+            if(numero>maior){
+                maior=numero
+            }
+            if(numero<menor){
+                menor=numero
+            }
+
+        }
+
+        window.alert(`O maior valor é ${maior}.\nO menor valor é ${menor}.`)
+
+    </script>
+</body>
+</html>

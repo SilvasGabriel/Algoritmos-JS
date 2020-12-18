@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem Crescente</title>
+</head>
+<body>
+    <script>
+        /*Ler 3 valores (considere que não serão informados valores iguais) e escrevê-los em ordem
+crescente.*/
+        var v1 = Number.parseFloat(window.prompt('Informe o primeiro valor:'))
+        var v2 = Number.parseFloat(window.prompt('Informe o segundo valor:'))
+        var v3 = Number.parseFloat(window.prompt('Informe o terceiro valor:'))
+
+        
+        if((v1 === v2 === v3)){
+            window.alert(`VALORES IGUAIS TENTE NOVAMENTE!`)
+        }else if((v1<v2)&&(v1<v3)&&(v2<v3)){
+            window.alert(`Ordem crescente:${v1},${v2},${v3},...`)
+        }else if((v1<v2)&&(v1<v3)&&(v3<v2)){
+            window.alert(`Ordem crescente:${v1},${v3},${v2},...`)
+        }else if((v2<v1)&&(v2<v3)&&(v1<v3)){
+            window.alert(`Ordem crescente:${v2},${v1},${v3},...`)
+        }else if((v2<v1)&&(v2<v3)&&(v3<v1)){
+            window.alert(`Ordem crescente:${v2},${v3},${v1},...`)
+        }else if((v3<v1)&&(v3<v2)&&(v2<v1)){
+            window.alert(`Ordem crescente:${v3},${v2},${v1},...`)
+        }else if((v3<v1)&&(v3<v2)&&(v1<v2)){
+            window.alert(`Ordem crescente:${v3},${v1},${v2},...`)
+        }
+
+
+    </script>
+</body>
+</html>

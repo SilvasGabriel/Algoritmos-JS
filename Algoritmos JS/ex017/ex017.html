@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores maior ou menor</title>
+</head>
+<body>
+    <script>
+        /*Ler dois valores (considere que não serão lidos valores iguais) e escrever o maior deles.*/
+        var valor1 = Number.parseFloat(window.prompt('Digite um valor:'))
+        var valor2 = Number.parseFloat(window.prompt('Digite outro valor:'))
+
+        if(valor1 === valor2){
+            window.alert(`Os valores são iguais por favor digite valores DIFERENTES!`)
+        }else if(valor1 > valor2){
+            window.alert(`O maior valor é ${valor1} sendo primeiro digitado.`)
+        }else{
+            window.alert(`O maior valor é ${valor2} sendo o segundo digitado.`)
+        }
+
+
+    </script>
+</body>
+</html>

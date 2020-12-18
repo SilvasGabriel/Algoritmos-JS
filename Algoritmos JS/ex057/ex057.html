@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 56 com acrescimo</title>
+</head>
+<body>
+    <script>
+        /*O mesmo exercício anterior, mas agora, considere que o segundo valor lido poderá ser maior ou
+menor que o primeiro valor lido, ou seja, deve-se testá-los.*/
+
+        var valor1 = Number.parseFloat(window.prompt('Digite o primeiro valor:'))
+        var valor2 = Number.parseFloat(window.prompt('Digite o segundo valor:'))
+        var soma = 0
+
+        if(valor2>valor1){
+            for(var i=valor1;i<=valor2;i++){
+                soma = soma + i
+            }
+
+            window.alert(`A soma entre os valores é ${soma}.`)
+        }else {
+            for(var i=valor1;i>=valor2;i--){
+                soma=soma + i
+            }
+            window.alert(`A soma entre os valores é ${soma}.`)
+        }
+    
+    
+    </script>
+</body>
+</html>

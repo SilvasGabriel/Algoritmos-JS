@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Esqoquista</title>
+</head>
+<body>
+    <script>
+        /*Uma loja está levantando o valor total de todas as mercadorias em estoque. Escreva um algoritmo
+que permita a entrada das seguintes informações: a) o número total de mercadorias no estoque; b) o
+valor de cada mercadoria. Ao final imprimir o valor total em estoque e a média de valor das
+mercadorias.*/
+        
+        var numero_total_mercadorias = Number.parseInt(window.prompt('Quantas mercadorias tem?'))
+        var media_valores_mercadorias
+        var soma = 0
+
+        for(i=1;i<=numero_total_mercadorias;i++){
+            var valor_mercadoria = Number.parseFloat(window.prompt('Qual o preço da mercadoria?'))
+            soma = soma+valor_mercadoria      
+        }
+
+        media_valores_mercadorias = (soma/numero_total_mercadorias).toFixed(2)
+
+        window.alert(`A loja tem ${numero_total_mercadorias} produto(s).\nA soma dos valores do(s) produto(s) são $${soma}.\nA media dos valores da loja é de $${media_valores_mercadorias}.`)
+
+    </script>
+</body>
+</html>

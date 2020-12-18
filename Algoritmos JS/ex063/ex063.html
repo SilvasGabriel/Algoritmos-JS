@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Maior Media Menor Produtos</title>
+</head>
+<body>
+    <script>
+        /*Faça um algoritmo para ler o código e o preço de 15 produtos, calcular e escrever:
+- o maior preço lido
+- a média aritmética dos preços dos produtos*/
+
+        var código = Number.parseInt(window.prompt('Digite o codigo do produto:')) 
+        var preco = Number.parseFloat(window.prompt('Digite o preço desse produto:'))
+        var maior = 0
+        var menor = 0
+        maior = preco
+        menor = preco
+        
+        for(var i=2;i<=15;i++){
+            var código = Number.parseInt(window.prompt('Digite o codigo do produto:')) 
+            var preco = Number.parseFloat(window.prompt('Digite o preço desse produto:'))
+            var soma = preco
+            var media
+
+            if(preco>maior){
+                maior=preco
+            }
+            if(preco<menor){
+                menor=preco
+            }
+            
+            soma = soma+preco
+
+        }
+
+        media = (soma/15).toFixed(1)
+
+        window.alert(`O maior preço é $${maior} reais.\nO menor preço é $${menor} reais.\nA soma dos preços é $${soma} reais.\nA media dos preços é $${media} reais.`)
+
+    </script>
+</body>
+</html>

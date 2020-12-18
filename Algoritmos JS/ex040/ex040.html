@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acrescentar mensagem</title>
+</head>
+<body>
+    <script>
+        /*Acrescentar uma mensagem de 'VALOR INVÁLIDO' no exercício [44] caso o segundo valor
+informado seja ZERO.*/
+        var valor1 = Number.parseInt(window.prompt('Entre com o primeiro valor:'))
+        var divisao
+        
+        do {
+            var valor2 = Number.parseInt(window.prompt('Entre com o segundo valor:'))
+              
+              if(valor2==0){
+                  window.alert('VALOR INVÁLIDO')
+              }
+        
+        } while (valor2 == 0)
+            
+        divisao = valor1/valor2
+        window.alert(`O valor da divisão é ${divisao}.`)
+
+    </script>
+</body>
+</html>

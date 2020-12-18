@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizar em ordem crescente</title>
+</head>
+<body>
+    <script>
+        /*Faça um algoritmo para ler 10 números e armazenar em um vetor. Após isto, o algoritmo deve
+ordenar os números no vetor em ordem crescente. Escrever o vetor ordenado.*/
+        let vetor = []
+
+        for(let i =1;i<=10;i++){
+            let numero = Number.parseInt(window.prompt('Adicione 10 números:'))
+            vetor.push(numero)
+        }
+            vetor.sort(function(a,b){
+                return a-b
+            })
+
+            window.alert(`O vetor ordenado crescente é =[${vetor}]`)
+
+    </script>
+</body>
+</html>

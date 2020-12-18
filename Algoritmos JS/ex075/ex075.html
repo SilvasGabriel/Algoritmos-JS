@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        /*O mesmo exercício anterior, mas depois de ordenar os elementos do vetor em ordem crescente,
+deve ser lido mais um número qualquer e inserir esse novo número na posição correta, ou seja,
+mantendo a ordem crescente do vetor.*/
+    let vetor = []
+
+    for(let i =1;i<=10;i++){
+        let numero = Number.parseInt(window.prompt('Adicione 10 números:'))
+        vetor.push(numero)
+    }
+        let numero_adicional = Number.parseInt(window.prompt('Insira mais um número:'))
+        vetor.push(numero_adicional)
+
+        vetor.sort(function(a,b){
+             return a-b
+        })
+
+    window.alert(`O vetor ordenado crescente é =[${vetor}]`)
+    
+    </script>
+</body>
+</html>

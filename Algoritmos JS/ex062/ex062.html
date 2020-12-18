@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade de numeros/ Maior,Menor,Media</title>
+</head>
+<body>
+    <script>
+        /*Faça um algoritmo para ler uma quantidade e a seguir ler esta quantidade de números. Depois de
+ler todos os números o algoritmo deve apresentar na tela o maior dos números lidos e a média dos
+números lidos.*/
+        
+        var qtde_numeros = Number.parseInt(window.prompt('Qual a quantidade de números a ser lido:'))
+        var numero = Number.parseInt(window.prompt('Adicione um número:'))
+        var maior = 0
+        var menor = 0
+        maior = numero
+        menor = numero
+        var soma = 1 // A soma tem que ser igual a 1 para adicionar o numero no incio
+        var media
+
+        for(var i = 2;i<=qtde_numeros;i++){
+            var numero = Number.parseInt(window.prompt('Adicione um número:')) 
+
+            if(numero>maior){
+                maior = numero
+            }
+            if(numero<menor){
+                menor = numero
+            }
+            soma = soma+numero
+        }
+            media = (soma/qtde_numeros).toFixed(1)
+
+        window.alert(`A quantidade de números lidos é ${qtde_numeros}.\nA soma dos números é ${soma}.\nO maior valor é ${maior}.\nO menor valor é ${menor}.\nA média dos valores é ${media}.`)
+
+    </script>
+</body>
+</html>

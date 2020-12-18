@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruteira</title>
+</head>
+<body>
+    <script>
+        /*Uma fruteira está vendendo frutas com a seguinte tabela de preços:
+                        Até 5 Kg           Acima de 5 Kg
+        Morango         R$ 2,50 por Kg     R$ 2,20 por Kg
+        Maçã            R$ 1,80 por Kg     R$ 1,50 por Kg
+        Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá
+ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de
+morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.*/
+        
+            //voltar depois
+
+            var quantidade_em_kg_maca = Number.parseFloat(window.prompt('Quantos quilos(Kg) de maça você comprou?'))
+            var quantidade_em_kg_morango  = Number.parseFloat(window.prompt('Quantos quilos(Kg) de morango você comprou?'))
+            var preco_maca
+            var preco_morango
+            var preco_final
+
+           if((preco_maca<=5)&&(preco_morango<=5)){
+               preco_maca = quantidade_em_kg_maca*1.80.toFixed(2)
+               preco_morango = quantidade_em_kg_morango*2.50.toFixed(2)
+               window.alert(`Você comprou ${quantidade_em_kg_maca} KG de maça e pagará $${preco_maca} reais\nVocê comprou ${quantidade_em_kg_morango} KG de morango e pagará $${preco_morango} reais.`)
+           }else{
+               preco_maca = quantidade_em_kg_maca*1.50.toFixed(2)
+               preco_morango = quantidade_em_kg_morango*2.20.toFixed(2)
+               window.alert(`Você comprou ${quantidade_em_kg_maca} KG de maça e pagará $${preco_maca} reais\nVocê comprou ${quantidade_em_kg_morango} KG de morango e pagará $${preco_morango} reais.`)
+           }
+           
+           if((quantidade_em_kg_maca+quantidade_em_kg_morango>8)||(preco_maca+preco_morango>25)){
+               preco_final = preco_maca+preco_morango - ((preco_maca+preco_morango)*0.10)
+               window.alert(`O cliente irá pagar $${preco_final} reias com 10% de desconto.`)
+           }else{
+               preco_final = preco_maca+preco_morango
+               window.alert(`O cliente irá pagar $${preco_final} reais.`)
+           }
+
+           
+
+    </script>
+</body>
+</html>

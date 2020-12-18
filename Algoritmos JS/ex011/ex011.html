@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Notas</title>
+</head>
+<body>
+    <script>
+        /*Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno.
+Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. Fórmula para o cálculo da média
+final é: 
+                n1 * 2 + n2 * 3 + n3 * 5
+mediafinal = -----------------------------------
+                            10*/
+        var nota1 = Number.parseFloat(window.prompt('Qual a primeira nota do aluno?'))
+        var nota2 = Number.parseFloat(window.prompt('Qual a segunda nota do aluno?'))
+        var nota3 = Number.parseFloat(window.prompt('Qual a terceira nota do aluno?'))
+        var media
+
+        media = ((nota1*2)+(nota2*3)+(nota3*5))/10
+
+        window.alert(`A média do aluno é ${media}`)
+
+    </script>
+</body>
+</html>

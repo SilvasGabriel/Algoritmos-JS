@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangulo</title>
+</head>
+<body>
+    <script>
+        /*Ler 3 valores (A, B e C) representando as medidas dos lados de um triângulo e escrever se formam
+ou não um triângulo. OBS: para formar um triângulo, o valor de cada lado deve ser menor que a soma
+dos outros 2 lados.*/
+        
+        var valor1 = Number.parseInt(window.prompt('Informe a medida dos lados do triângulo:'))
+        var valor2 = Number.parseInt(window.prompt('Informe a medida dos lados do triângulo:'))   
+        var valor3 = Number.parseInt(window.prompt('Informe a medida dos lados do triângulo:'))
+
+        if((valor1<valor2+valor3)&&(valor2<valor1+valor3)&&(valor3<valor1+valor2)){
+            window.alert(`Forma um Triângulo.`)
+        }else{
+            window.alert(`Não forma um Triângulo.`)
+        }
+
+    </script>
+</body>
+</html>

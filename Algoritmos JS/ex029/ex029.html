@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de Futebol</title>
+</head>
+<body>
+    <script>
+        /*Ler o nome de 2 times e o número de gols marcados na partida (para cada time). Escrever o nome
+do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.*/
+        
+        var time1 = String(window.prompt('Qual o nome do primeiro time:'))
+        var goaltime1 = Number.parseInt(window.prompt('Quantos goals esse time fez?'))
+        var time2 = String(window.prompt('Qual o nome do segundo time:'))
+        var goaltime2 = Number.parseInt(window.prompt('Quantos goals esse time fez?'))
+
+        if(goaltime1 == goaltime2){
+            window.alert(`${time1} e o ${time2} EMPATARAM O JOGO EM ${goaltime1}x${goaltime2}`)
+        }else if(goaltime1>goaltime2){
+            window.alert(`${time1} saiu vitorioso contra o ${time2} com o placar de ${goaltime1}x${goaltime2}!`)
+        }else{
+            window.alert(`${time2} saiu vitorioso contra o ${time1} com o placar de ${goaltime2}x${goaltime1}!`)
+        }
+                
+    </script>
+</body>
+</html>

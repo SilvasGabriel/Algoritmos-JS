@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura Da Cidade</title>
+</head>
+<body>
+    <script>
+        /*A prefeitura de uma cidade deseja fazer uma pesquisa entre seus habitantes. Faça um algoritmos
+    para coletar dados sobre o salário e número de filhos de cada habitante e após as leituras, escrever:
+    a) Média de salário da população
+    b) Média do número de filhos
+    c) Maior salário dos habitantes
+    d) Percentual de pessoas com salário menor que R$ 150,00*/
+        
+        
+        var populacao = Number.parseInt(window.prompt('Qual a população da cidade?'))
+        var salario = Number.parseFloat(window.prompt('Qual o seu salário?'))
+        var filhos = Number.parseInt(window.prompt('Quantos filhos(as) você tem?'))
+        var maior_salario = 0
+        var menor_salario = 0
+        maior_salario = salario
+        menor_salario = salario
+        var total_filhos = filhos
+        var total_salario = salario
+        var total_populacao
+        var percentual_salario 
+        
+
+        for(var i=2;i<=populacao;i++){
+            var salario = Number.parseFloat(window.prompt('Qual o seu salário?'))
+            var filhos = Number.parseInt(window.prompt('Quantos filhos(as) você tem?'))
+            var media_filhos 
+            var media_salario
+            var salario_até_150 = 0
+          
+
+            if(salario>maior_salario){
+                maior_salario = salario
+            }
+            if(salario<menor_salario){
+                menor_salario = salario
+            }
+            if(salario<=150){
+                salario_até_150 = salario_até_150 + 1     
+            }
+
+            total_salario = total_salario+salario
+            total_filhos = total_filhos+filhos
+
+        }
+             
+        media_salario = (total_salario/salario).toFixed(2)
+        media_filhos = (total_filhos/filhos).toFixed(0)
+        total_populacao = populacao+total_filhos
+        percentual_salario = (salario_até_150*100)/populacao 
+
+        window.alert(`O total  da população é de ${total_populacao} pessoas.\nO maior salário é de $${maior_salario} reais.\nO menor salário é de $${menor_salario} reais.\nA média de filhos da população é de ${media_filhos}.\nA média salarial da população é de $${media_salario} reais.\nO percentual de pessoas com salário menor que $150 reais é de ${percentual_salario}%.`)
+
+    </script>
+</body>
+</html>
